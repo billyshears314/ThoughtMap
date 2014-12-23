@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    
+	  <form action="addThought" method="POST">
+		    Name: <input type="text" name="name"></input><br>
+		    Parent: <input type="text" name="parent"></input><br>
+		   <!-- Children: <input type="text" name="children"></input><br>-->
+		    Level: <input type="number" min="1" max="10" value="1" name="level"></input><br>
+		    <button type="submit">Submit</button>
+	  </form>    
+    
+  </body>
+</html>
